@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="MainTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="MainTree">
+        <Sequence name="root_sequence">
+            <Action ID="BehaviorTask" task_description="TAKE_OFF;;1"/>
+            <Action ID="BehaviorTask" task_description="FOLLOW_PATH;path: [ [1, 1, 3] ];1"/>
+            <Action ID="BehaviorTask" task_description="LAND;;1"/>
+        </Sequence>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Action ID="BehaviorTask">
+            <input_port name="task_description"/>
+        </Action>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>
+
